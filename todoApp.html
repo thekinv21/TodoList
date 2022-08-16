@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todoList</title>
+    <!-----------Css link--------------->
+    <link rel="stylesheet" href="/todoApp.css" />
+
+    <!------------Font Awesome Link------------>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="main">
+        <div class="alert-container">
+          <div class="alert">
+            <span><i class="fa-solid fa-circle-exclamation"></i></span>
+            <span class="message"> Warning : Todo alanı Boş Bırakılamaz </span>
+            <span><i class="fa-solid fa-circle-xmark"></i></span>
+          </div>
+
+          <div class="alert-complated">
+            <span><i class="fa-solid fa-calendar-check"></i></span>
+            <span class="message-complete"> Todo Eklendi </span>
+          </div>
+
+          <div class="alert-clear">
+            <span><i class="fa-solid fa-calendar-xmark"></i></span>
+            <span class="message-delete"> Todo Silindi </span>
+          </div>
+        </div>
+
+        <div class="container">
+          <form class="form">
+            <div class="header">
+              <h1>TodoList 2022</h1>
+            </div>
+            <div>
+              <input
+                id="demo"
+                class="add-text"
+                type="text"
+                placeholder="What do you have planned?"
+              />
+              <button id="add" type="button" class="add-btn">Add</button>
+              <button type="button" class="clear-btn">Clear</button>
+            </div>
+          </form>
+
+          <div class="todo-item">
+            <ul class="todo-container">
+              <!--Javascript codes here-->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="./todoApp.js"></script>
+  </body>
+</html>

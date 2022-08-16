@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-container {
+  height: 100vh;
+  background-image: url("https://images.alphacoders.com/546/thumb-1920-546091.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.main {
+  background-color: rgb(0, 0, 0, 0.4);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.container {
+  width: 650px;
+  background: rgb(0, 0, 0, 0.6);
+  border-radius: 5px;
+  border: none;
+  margin-top: 70px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: aliceblue;
+  margin: 30px 30px;
+}
+
+input.add-text {
+  width: 300px;
+  height: 30px;
+  background: bisque;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: small;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+button.add-btn {
+  height: 30px;
+  width: 60px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: darkolivegreen;
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.clear {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button.clear-btn {
+  height: 30px;
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: darkred;
+  color: #fff;
+  cursor: pointer;
+}
+
+.todo-item {
+  margin: 30px 10px;
+}
+
+.todo-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 8px 0px;
+  background: rgb(202, 134, 7);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: aliceblue;
+  width: 450px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.icons button {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  outline: none;
+  border: none;
+  background: darkred;
+  color: #fff;
+  width: 50px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.edit-btn {
+  outline: none;
+  border: none;
+  background: darkolivegreen;
+  color: #fff;
+  width: 50px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.myTodotext {
+  margin-left: 50px;
+  font-weight: 600;
+  font-size: small;
+}
+
+/* ---------------------My Alert Box When İ add anything -----------------------------*/
+.alert {
+  background: rgb(202, 134, 7);
+  color: aliceblue;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: absolute;
+  border-radius: 4px;
+  right: 10px;
+  top: 5%;
+  border-left: 8px solid #fff;
+  display: none;
+}
+
+.alert .fa-circle-exclamation {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 20px;
+}
+
+.alert .message {
+  padding: 0 20px;
+  font-size: small;
+  font-family: "Montserrat", sans-serif;
+}
+
+.alert .fa-circle-xmark {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ce8500;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/*------------------Complete Alert-------------------- */
+
+.alert-complated {
+  background: rgb(31, 136, 31);
+  color: #fff;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: absolute;
+  border-radius: 4px;
+  right: 10px;
+  top: 5%;
+  border-left: 8px solid #fff;
+  display: none;
+}
+
+.alert-complated .fa-calendar-check,
+.fa-calendar-xmark {
+  padding: 0 10px;
+  font-size: 25px;
+}
+
+.message-complete,
+.message-delete {
+  font-size: small;
+}
+
+/*-------------------Clear All ---------------------------*/
+
+.alert-clear {
+  background: darkred;
+  color: #fff;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: absolute;
+  border-radius: 4px;
+  right: 10px;
+  top: 5%;
+  border-left: 8px solid beige;
+  cursor: pointer;
+  display: none;
+}
