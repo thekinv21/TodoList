@@ -73,6 +73,11 @@ button.add-btn {
   cursor: pointer;
 }
 
+
+
+
+
+
 .clear {
   position: absolute;
   top: 90%;
@@ -121,30 +126,29 @@ button.clear-btn {
   cursor: pointer;
 }
 
-.delete-btn {
+.delete-btn , .edit-btn {
   outline: none;
   border: none;
-  background: darkred;
-  color: #fff;
-  width: 50px;
-  height: 25px;
-  border-radius: 5px;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+  padding: 0px 15px 0px 10px;
+
+
+
 }
 
-.edit-btn {
-  outline: none;
-  border: none;
-  background: darkolivegreen;
-  color: #fff;
-  width: 50px;
-  height: 25px;
-  border-radius: 5px;
-}
+
 
 .myTodotext {
-  margin-left: 50px;
+  /* margin-left: 50px; */
+  width: 80%;
   font-weight: 600;
   font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 70px;
 }
 
 /* ---------------------My Alert Box When İ add anything -----------------------------*/
