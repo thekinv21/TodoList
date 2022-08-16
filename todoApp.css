@@ -73,11 +73,6 @@ button.add-btn {
   cursor: pointer;
 }
 
-
-
-
-
-
 .clear {
   position: absolute;
   top: 90%;
@@ -126,19 +121,15 @@ button.clear-btn {
   cursor: pointer;
 }
 
-.delete-btn , .edit-btn {
+.delete-btn,
+.edit-btn {
   outline: none;
   border: none;
   font-size: 18px;
   color: black;
   cursor: pointer;
   padding: 0px 15px 0px 10px;
-
-
-
 }
-
-
 
 .myTodotext {
   /* margin-left: 50px; */

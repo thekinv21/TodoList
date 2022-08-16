@@ -45,8 +45,6 @@ const Ekle = (e) => {
     const todoEdit = document.createElement("i");
     todoEdit.classList.add("edit-btn")
     todoEdit.innerHTML = "<i class='fa-solid fa-pen-to-square'></i>"
-    // todoEdit.classList.add("edit-btn");
-    // todoEdit.innerText = "Edit";
     todoİconsli.appendChild(todoEdit);
 
     //Edit my Text
@@ -60,8 +58,7 @@ const Ekle = (e) => {
     const todoDelete = document.createElement("i");
     todoDelete.classList.add("delete-btn")
     todoDelete.innerHTML = "<i class='fa-solid fa-trash-can'></i>"
-    // todoDelete.classList.add("delete-btn");
-    // todoDelete.innerText = "Delete";
+ 
     todoİconsli.appendChild(todoDelete);
 
     todoDelete.addEventListener(
