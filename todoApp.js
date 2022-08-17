@@ -65,47 +65,27 @@ const Ekle = (e) => {
 
     //------------------Complate Todo------------------------- //
 
-    li1.addEventListener("click" , Complate = () => {
-
-      tododiv.classList.toggle("todo-complated");
-
-
-    })
-
-
-
-
-
-
-
-
+    li1.addEventListener(
+      "click",
+      (Complate = () => {
+        tododiv.classList.toggle("todo-complated");
+      })
+    );
 
     //------------------Edit Todo------------------------- //
     li2.addEventListener(
       "click",
       (Edit = () => {
-        
-    
-        todopText.innerText = prompt("Edit Todo : " ).toUpperCase();
-
-        
-
-
-
+        todopText.innerText = prompt("Edit Todo : ").toUpperCase();
       })
     );
 
-       //------------------Delete Todo------------------------- //
+    //------------------Delete Todo------------------------- //
 
     li3.addEventListener(
       "click",
       (Delete = () => {
-
-
-        
-        todoContainer.removeChild(divİtems)
-        
-     
+        todoContainer.removeChild(divİtems);
 
         //-------------------Show delete alert------------------//
         alertDellete.style.display = "block";
@@ -139,10 +119,7 @@ const Clear = () => {
       text: "Silinecek Todo Kalmadı!",
       icon: "error",
       button: "Okey !",
-      
     });
-
-    
   } else {
     todoContainer.innerHTML = "";
     swal({
@@ -151,8 +128,6 @@ const Clear = () => {
       icon: "success",
       button: "Okey!",
     });
-
-    
   }
 };
 
