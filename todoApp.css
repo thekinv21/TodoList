@@ -34,11 +34,13 @@
   margin-top: 70px;
 }
 
+/* ----------------------form içerigi Başlık -------------------------------*/
 .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .header {
@@ -60,87 +62,87 @@ input.add-text {
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
-
-button.add-btn {
-  height: 30px;
-  width: 60px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  background: darkolivegreen;
-  color: #fff;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.clear {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-button.clear-btn {
-  height: 30px;
-  width: 80px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  background: darkred;
-  color: #fff;
-  cursor: pointer;
-}
-
-.todo-item {
-  margin: 30px 10px;
-}
-
-.todo-list {
+.add-clear-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  list-style: none;
-  padding: 8px 0px;
-  background: rgb(202, 134, 7);
-  border-radius: 5px;
-  margin-bottom: 20px;
-  color: aliceblue;
-  width: 450px;
 }
 
-.todo-container {
+.add-clear-buttons i {
+  padding: 0px 5px 0px 10px;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.fa-calendar-plus {
+  color: greenyellow;
+  font-size: 25px;
+}
+
+.fa-trash {
+  color: rgb(255, 0, 0);
+}
+
+/*---------------------------- Todo içerigi Başlangıç------------------------------*/
+
+.todo-items {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Montserrat", sans-serif;
 }
 
-.icons button {
-  margin: 0 5px;
-  cursor: pointer;
+.items {
+  display: flex;
+  margin: 10px 0px 10px 0px;
+ 
 }
 
-.delete-btn,
-.edit-btn {
-  outline: none;
-  border: none;
-  font-size: 18px;
-  color: black;
-  cursor: pointer;
-  padding: 0px 15px 0px 10px;
+.fall {
+  opacity: 0 ;
+  transform: translateY(30px);
+  transition: .5 all ease;
 }
 
-.myTodotext {
-  /* margin-left: 50px; */
-  width: 80%;
-  font-weight: 600;
+.text-container {
+  padding: 8px 0px;
+  background: rgb(202, 134, 7);
+  border-radius: 5px;
+  color: aliceblue;
+  width: 400px;
+  height: 27px;
+  margin-right: 10px;
+}
+
+.todo-text {
   font-size: small;
+  overflow: hidden;
+  text-align: center;
+  flex:  1 1 0%;
+}
+
+.todo-buttons {
+  width: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 70px;
 }
+
+.todo-buttons li {
+  padding: 0px 5px 0px 5px;
+  cursor: pointer;
+  font-size: 20px;
+  list-style: none;
+}
+
+.todo-complated {
+  text-decoration: line-through;
+  opacity: 2;
+  background-color: darkgreen;
+  transition:  all  0.5s ease;
+}
+
+
 
 /* ---------------------My Alert Box When İ add anything -----------------------------*/
 .alert {
